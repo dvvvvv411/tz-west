@@ -103,3 +103,14 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  /* Professional insolvency page styling */
+  .insolvency-notice {
+    @apply bg-destructive/10 border-destructive/20 text-destructive;
+  }
+  
+  .administrator-card {
+    @apply border-primary bg-primary/5;
+  }
+}

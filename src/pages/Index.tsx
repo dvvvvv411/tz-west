@@ -7,19 +7,19 @@ const Index = () => {
     <div className="min-h-screen bg-background flex flex-col">
       {/* Professional Header */}
       <header className="professional-header text-primary-foreground">
-        <div className="container mx-auto px-4 py-8">
-          <h1 className="text-3xl font-bold mb-2">TZ-West GmbH</h1>
+        <div className="container mx-auto px-4 py-4 md:py-8">
+          <h1 className="text-2xl md:text-3xl font-bold mb-2">TZ-West GmbH</h1>
           <p className="text-primary-foreground/80">Düsselstr. 1, 41564 Kaarst</p>
         </div>
       </header>
 
       {/* Main Content - Flex Grow */}
-      <main className="container mx-auto px-4 py-12 space-y-12 flex-1">
+      <main className="container mx-auto px-4 py-6 md:py-12 space-y-6 md:space-y-12 flex-1">
         {/* Insolvency Notice */}
         <section className="text-center">
           <div className="max-w-4xl mx-auto">
-            <div className="insolvency-notice rounded-lg p-8 mb-8">
-              <h1 className="text-4xl font-bold text-destructive mb-4">
+            <div className="insolvency-notice rounded-lg p-4 md:p-8 mb-6 md:mb-8">
+              <h1 className="text-2xl md:text-4xl font-bold text-destructive mb-4">
                 Insolvenzverfahren eröffnet
               </h1>
               <p className="text-lg text-foreground mb-4">
@@ -36,7 +36,7 @@ const Index = () => {
         <section className="max-w-4xl mx-auto">
           <Card className="administrator-card">
             <CardHeader className="text-center pb-6">
-              <CardTitle className="text-3xl gold-accent mb-2">Ansprechpartner</CardTitle>
+              <CardTitle className="text-2xl md:text-3xl gold-accent mb-2">Ansprechpartner</CardTitle>
               <p className="text-muted-foreground text-lg">Für alle Anfragen wenden Sie sich bitte an den Insolvenzverwalter</p>
             </CardHeader>
             <CardContent className="space-y-8">
@@ -46,7 +46,7 @@ const Index = () => {
                 <p className="text-muted-foreground text-base">Fachanwalt für Insolvenzrecht</p>
               </div>
               
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <MapPin className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
@@ -121,7 +121,7 @@ const Index = () => {
         <section className="max-w-4xl mx-auto">
           <Card className="premium-card">
             <CardHeader>
-              <CardTitle className="text-2xl">Unternehmensgeschichte</CardTitle>
+              <CardTitle className="text-xl md:text-2xl">Unternehmensgeschichte</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="border-l-4 border-accent pl-6">
@@ -152,7 +152,7 @@ const Index = () => {
         <section className="max-w-4xl mx-auto">
           <Card className="premium-card">
             <CardHeader>
-              <CardTitle className="text-2xl">Unternehmensinformationen</CardTitle>
+              <CardTitle className="text-xl md:text-2xl">Unternehmensinformationen</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="grid md:grid-cols-2 gap-6">
@@ -181,7 +181,7 @@ const Index = () => {
 
       {/* Sticky Footer */}
       <footer className="professional-header text-primary-foreground mt-auto">
-        <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto px-4 py-4 md:py-8">
           <div className="text-center">
             <p className="mb-3 text-lg">
               <strong>Wichtiger Hinweis:</strong> Die TZ-West GmbH befindet sich im Insolvenzverfahren.

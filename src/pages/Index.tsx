@@ -4,21 +4,21 @@ import { Phone, Mail, Globe, MapPin } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b border-border bg-card">
-        <div className="container mx-auto px-4 py-6">
-          <h1 className="text-2xl font-bold text-foreground">TZ-West GmbH</h1>
-          <p className="text-sm text-muted-foreground">Düsselstr. 1, 41564 Kaarst</p>
+    <div className="min-h-screen bg-background flex flex-col">
+      {/* Professional Header */}
+      <header className="professional-header text-primary-foreground">
+        <div className="container mx-auto px-4 py-8">
+          <h1 className="text-3xl font-bold mb-2">TZ-West GmbH</h1>
+          <p className="text-primary-foreground/80">Düsselstr. 1, 41564 Kaarst</p>
         </div>
       </header>
 
-      {/* Main Content */}
-      <main className="container mx-auto px-4 py-12 space-y-12">
+      {/* Main Content - Flex Grow */}
+      <main className="container mx-auto px-4 py-12 space-y-12 flex-1">
         {/* Insolvency Notice */}
         <section className="text-center">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-8 mb-8">
+            <div className="insolvency-notice rounded-lg p-8 mb-8">
               <h1 className="text-4xl font-bold text-destructive mb-4">
                 Insolvenzverfahren eröffnet
               </h1>
@@ -34,56 +34,56 @@ const Index = () => {
 
         {/* Administrator Contact - Main Focus */}
         <section className="max-w-4xl mx-auto">
-          <Card className="border-2 border-primary bg-primary/5">
-            <CardHeader className="text-center pb-4">
-              <CardTitle className="text-2xl text-primary">Ansprechpartner</CardTitle>
-              <p className="text-muted-foreground">Für alle Anfragen wenden Sie sich bitte an den Insolvenzverwalter</p>
+          <Card className="administrator-card">
+            <CardHeader className="text-center pb-6">
+              <CardTitle className="text-3xl gold-accent mb-2">Ansprechpartner</CardTitle>
+              <p className="text-muted-foreground text-lg">Für alle Anfragen wenden Sie sich bitte an den Insolvenzverwalter</p>
             </CardHeader>
-            <CardContent className="space-y-6">
+            <CardContent className="space-y-8">
               <div className="text-center">
-                <h3 className="text-xl font-semibold text-foreground mb-2">Mark Steh</h3>
-                <p className="text-primary font-medium">Rechtsanwalt</p>
-                <p className="text-muted-foreground">Fachanwalt für Insolvenzrecht</p>
+                <h3 className="text-2xl font-bold text-foreground mb-2">Mark Steh</h3>
+                <p className="gold-accent font-semibold text-lg">Rechtsanwalt</p>
+                <p className="text-muted-foreground text-base">Fachanwalt für Insolvenzrecht</p>
               </div>
               
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4">
+                    <MapPin className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
                     <div>
-                      <p className="font-medium text-foreground">Adresse</p>
+                      <p className="font-semibold text-foreground text-lg">Adresse</p>
                       <p className="text-muted-foreground">Speldorfer Str. 2</p>
                       <p className="text-muted-foreground">40239 Düsseldorf</p>
                     </div>
                   </div>
                   
-                  <div className="flex items-center gap-3">
-                    <Phone className="h-5 w-5 text-primary flex-shrink-0" />
+                  <div className="flex items-center gap-4">
+                    <Phone className="h-6 w-6 text-accent flex-shrink-0" />
                     <div>
-                      <p className="font-medium text-foreground">Telefon</p>
-                      <a href="tel:+492115426220" className="text-primary hover:underline">
+                      <p className="font-semibold text-foreground text-lg">Telefon</p>
+                      <a href="tel:+492115426220" className="gold-accent hover:underline text-lg">
                         (0211) 54262200
                       </a>
                     </div>
                   </div>
                 </div>
                 
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <Mail className="h-5 w-5 text-primary flex-shrink-0" />
+                <div className="space-y-6">
+                  <div className="flex items-center gap-4">
+                    <Mail className="h-6 w-6 text-accent flex-shrink-0" />
                     <div>
-                      <p className="font-medium text-foreground">E-Mail</p>
-                      <a href="mailto:m.steh@kbs-kanzlei.de" className="text-primary hover:underline">
+                      <p className="font-semibold text-foreground text-lg">E-Mail</p>
+                      <a href="mailto:m.steh@kbs-kanzlei.de" className="gold-accent hover:underline">
                         m.steh@kbs-kanzlei.de
                       </a>
                     </div>
                   </div>
                   
-                  <div className="flex items-center gap-3">
-                    <Globe className="h-5 w-5 text-primary flex-shrink-0" />
+                  <div className="flex items-center gap-4">
+                    <Globe className="h-6 w-6 text-accent flex-shrink-0" />
                     <div>
-                      <p className="font-medium text-foreground">Website</p>
-                      <a href="https://kbs-kanzlei.de" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                      <p className="font-semibold text-foreground text-lg">Website</p>
+                      <a href="https://kbs-kanzlei.de" target="_blank" rel="noopener noreferrer" className="gold-accent hover:underline">
                         kbs-kanzlei.de
                       </a>
                     </div>
@@ -91,17 +91,17 @@ const Index = () => {
                 </div>
               </div>
 
-              <div className="text-center pt-4">
-                <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                  <Button asChild className="bg-primary hover:bg-primary/90">
+              <div className="text-center pt-6">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button asChild className="professional-button text-lg px-8 py-3">
                     <a href="tel:+492115426220">
-                      <Phone className="h-4 w-4 mr-2" />
+                      <Phone className="h-5 w-5 mr-2" />
                       Anrufen
                     </a>
                   </Button>
-                  <Button variant="outline" asChild>
+                  <Button variant="outline" asChild className="border-accent text-accent hover:bg-accent hover:text-accent-foreground text-lg px-8 py-3">
                     <a href="mailto:m.steh@kbs-kanzlei.de">
-                      <Mail className="h-4 w-4 mr-2" />
+                      <Mail className="h-5 w-5 mr-2" />
                       E-Mail senden
                     </a>
                   </Button>
@@ -111,28 +111,59 @@ const Index = () => {
           </Card>
         </section>
 
+        {/* Company History */}
+        <section className="max-w-4xl mx-auto">
+          <Card className="premium-card">
+            <CardHeader>
+              <CardTitle className="text-2xl">Unternehmensgeschichte</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-6">
+              <div className="border-l-4 border-accent pl-6">
+                <h4 className="text-xl font-semibold text-foreground mb-3">KFZ-Handel seit 2021</h4>
+                <p className="text-muted-foreground mb-4">
+                  Die TZ-West GmbH wurde 2021 als spezialisierter KFZ-Händler gegründet und hat sich auf den Handel und die Vermittlung von Kraftfahrzeugen konzentriert.
+                </p>
+                <div className="space-y-3">
+                  <div>
+                    <span className="font-semibold text-foreground">Geschäftsführer:</span>
+                    <span className="ml-2 text-muted-foreground">Glenn Josef Lothar Frickart</span>
+                  </div>
+                  <div>
+                    <span className="font-semibold text-foreground">Spezialisierung:</span>
+                    <span className="ml-2 text-muted-foreground">KFZ-Handel und Fahrzeugvermittlung</span>
+                  </div>
+                  <div>
+                    <span className="font-semibold text-foreground">Gründungsjahr:</span>
+                    <span className="ml-2 text-muted-foreground">2021</span>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
         {/* Company Information */}
         <section className="max-w-4xl mx-auto">
-          <Card>
+          <Card className="premium-card">
             <CardHeader>
-              <CardTitle>Unternehmensinformationen</CardTitle>
+              <CardTitle className="text-2xl">Unternehmensinformationen</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2">TZ-West GmbH</h4>
+                  <h4 className="font-semibold text-foreground mb-3 text-lg">TZ-West GmbH</h4>
                   <div className="space-y-1 text-muted-foreground">
                     <p>Düsselstr. 1</p>
                     <p>41564 Kaarst</p>
                   </div>
                 </div>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2">
-                    <Mail className="h-4 w-4 text-muted-foreground" />
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3">
+                    <Mail className="h-5 w-5 text-muted-foreground" />
                     <span className="text-muted-foreground">info@tz-west.de</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Globe className="h-4 w-4 text-muted-foreground" />
+                  <div className="flex items-center gap-3">
+                    <Globe className="h-5 w-5 text-muted-foreground" />
                     <span className="text-muted-foreground">tz-west.de</span>
                   </div>
                 </div>
@@ -142,14 +173,14 @@ const Index = () => {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="border-t border-border bg-muted/50 mt-16">
+      {/* Sticky Footer */}
+      <footer className="professional-header text-primary-foreground mt-auto">
         <div className="container mx-auto px-4 py-8">
-          <div className="text-center text-sm text-muted-foreground">
-            <p className="mb-2">
+          <div className="text-center">
+            <p className="mb-3 text-lg">
               <strong>Wichtiger Hinweis:</strong> Die TZ-West GmbH befindet sich im Insolvenzverfahren.
             </p>
-            <p>
+            <p className="text-primary-foreground/80">
               Alle geschäftlichen Anfragen sind ausschließlich an den Insolvenzverwalter zu richten.
             </p>
           </div>

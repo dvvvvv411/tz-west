@@ -8,7 +8,8 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    /* Professional lawyer-like color scheme */
+    --background: 210 40% 98%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -17,26 +18,34 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Dark blue primary (lawyer color) */
+    --primary: 222 84% 27%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Gold accent color */
+    --secondary: 45 100% 51%;
+    --secondary-foreground: 222.2 84% 4.9%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Gold accent for important elements */
+    --accent: 45 100% 51%;
+    --accent-foreground: 222.2 84% 4.9%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 222 84% 27%;
 
     --radius: 0.5rem;
+
+    /* Professional shadows and gradients */
+    --shadow-elegant: 0 10px 30px -10px hsl(222 84% 27% / 0.3);
+    --shadow-gold: 0 4px 20px -4px hsl(45 100% 51% / 0.25);
+    --gradient-professional: linear-gradient(135deg, hsl(222 84% 27%), hsl(222 84% 35%));
 
     --sidebar-background: 0 0% 98%;
 
@@ -105,12 +114,41 @@ All colors MUST be HSL.
 }
 
 @layer components {
-  /* Professional insolvency page styling */
+  /* Professional lawyer-style components */
+  .professional-header {
+    background: var(--gradient-professional);
+    box-shadow: var(--shadow-elegant);
+  }
+  
   .insolvency-notice {
     @apply bg-destructive/10 border-destructive/20 text-destructive;
+    box-shadow: var(--shadow-elegant);
   }
   
   .administrator-card {
-    @apply border-primary bg-primary/5;
+    @apply border-2;
+    border-color: hsl(var(--accent));
+    background: linear-gradient(135deg, hsl(var(--accent) / 0.05), hsl(var(--accent) / 0.1));
+    box-shadow: var(--shadow-gold);
+  }
+  
+  .premium-card {
+    @apply bg-card border border-border;
+    box-shadow: var(--shadow-elegant);
+  }
+  
+  .professional-button {
+    background: var(--gradient-professional);
+    @apply text-primary-foreground border-none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .professional-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-gold);
+  }
+  
+  .gold-accent {
+    color: hsl(var(--accent));
   }
 }

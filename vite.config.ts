@@ -4,9 +4,28 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(() => ({
+  base: "/",
+  publicDir: "public",
   server: {
     host: "::",
     port: 8080,
+  },
+  preview: {
+    host: "::",
+    port: 4173,
+  },
+  build: {
+    outDir: "dist",
+    assetsDir: "assets",
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          router: ['react-router-dom'],
+          ui: ['@radix-ui/react-slot', 'lucide-react']
+        }
+      }
+    }
   },
   plugins: [react()],
   resolve: {

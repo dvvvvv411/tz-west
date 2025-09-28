@@ -8,44 +8,44 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Professional lawyer-like color scheme */
+    /* Professional neutral grey color scheme */
     --background: 210 40% 98%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 220 13% 18%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 13% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 13% 18%;
 
-    /* Dark blue primary (lawyer color) */
-    --primary: 222 84% 27%;
+    /* Dark grey primary (neutral professional) */
+    --primary: 215 25% 27%;
     --primary-foreground: 0 0% 100%;
 
-    /* Gold accent color */
-    --secondary: 45 100% 51%;
-    --secondary-foreground: 222.2 84% 4.9%;
+    /* Medium grey secondary */
+    --secondary: 220 13% 91%;
+    --secondary-foreground: 220 13% 18%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    /* Gold accent for important elements */
-    --accent: 45 100% 51%;
-    --accent-foreground: 222.2 84% 4.9%;
+    /* Medium grey accent */
+    --accent: 220 9% 46%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222 84% 27%;
+    --ring: 215 25% 27%;
 
     --radius: 0.5rem;
 
     /* Professional shadows and gradients */
-    --shadow-elegant: 0 10px 30px -10px hsl(222 84% 27% / 0.3);
-    --shadow-gold: 0 4px 20px -4px hsl(45 100% 51% / 0.25);
-    --gradient-professional: linear-gradient(135deg, hsl(222 84% 27%), hsl(222 84% 35%));
+    --shadow-elegant: 0 10px 30px -10px hsl(215 25% 27% / 0.3);
+    --shadow-grey: 0 4px 20px -4px hsl(220 9% 46% / 0.25);
+    --gradient-professional: linear-gradient(135deg, hsl(215 25% 27%), hsl(215 25% 35%));
 
     --sidebar-background: 0 0% 98%;
 
@@ -129,7 +129,7 @@ All colors MUST be HSL.
     @apply border-2;
     border-color: hsl(var(--accent));
     background: linear-gradient(135deg, hsl(var(--accent) / 0.05), hsl(var(--accent) / 0.1));
-    box-shadow: var(--shadow-gold);
+    box-shadow: var(--shadow-grey);
   }
   
   .premium-card {
@@ -145,10 +145,10 @@ All colors MUST be HSL.
   
   .professional-button:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow-gold);
+    box-shadow: var(--shadow-grey);
   }
   
-  .gold-accent {
+  .grey-accent {
     color: hsl(var(--accent));
   }
 }

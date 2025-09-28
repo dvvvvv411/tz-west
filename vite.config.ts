@@ -9,10 +9,12 @@ export default defineConfig(() => ({
   server: {
     host: "::",
     port: 8080,
+    allowedHosts: ["tz-west.de"]
   },
   preview: {
     host: "::",
     port: 4173,
+    allowedHosts: ["tz-west.de"]
   },
   build: {
     outDir: "dist",

@@ -32,101 +32,77 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Administrator Contact - MAIN FOCAL POINT */}
-        <section className="max-w-5xl mx-auto">
-          <Card className="administrator-card border-2 border-accent/50 shadow-2xl">
-            <CardHeader className="text-center pb-8">
-              <CardTitle className="text-4xl grey-accent mb-4">Insolvenzverwalter</CardTitle>
-              <p className="text-muted-foreground text-xl">Ihr Ansprechpartner für alle Anfragen</p>
+        {/* Administrator Contact - Main Focus */}
+        <section className="max-w-4xl mx-auto">
+          <Card className="administrator-card">
+            <CardHeader className="text-center pb-6">
+              <CardTitle className="text-3xl gold-accent mb-2">Ansprechpartner</CardTitle>
+              <p className="text-muted-foreground text-lg">Für alle Anfragen wenden Sie sich bitte an den Insolvenzverwalter</p>
             </CardHeader>
-            <CardContent className="space-y-10">
-              
-              {/* Legal Notice - Prominent */}
-              <div className="bg-accent/5 border-l-4 border-accent p-6 rounded-r-lg">
-                <h3 className="text-xl font-bold text-foreground mb-4">Offizielle Bekanntmachung</h3>
-                <div className="space-y-4 text-foreground">
-                  <p className="leading-relaxed">
-                    <strong>Hiermit wird bekannt gegeben, dass über das Vermögen der Gesellschaft das Insolvenzverfahren eröffnet wurde.</strong>
-                  </p>
-                  <p className="leading-relaxed">
-                    <strong>Alle Zahlungen sind ab sofort ausschließlich an den Insolvenzverwalter zu leisten.</strong>
-                  </p>
-                  <p className="leading-relaxed">
-                    Gläubiger werden gebeten, ihre Forderungen beim Insolvenzverwalter anzumelden. Weitere Informationen zum Verfahren erhalten Sie über die Kanzlei des Insolvenzverwalters.
-                  </p>
-                </div>
-              </div>
-
-              {/* Administrator Info */}
-              <div className="text-center bg-card p-6 rounded-lg border border-accent/20">
-                <h3 className="text-3xl font-bold text-foreground mb-3">Mark Steh</h3>
-                <p className="grey-accent font-semibold text-xl mb-2">Rechtsanwalt</p>
-                <p className="text-muted-foreground text-lg">Fachanwalt für Insolvenzrecht</p>
+            <CardContent className="space-y-8">
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-foreground mb-2">Mark Steh</h3>
+                <p className="gold-accent font-semibold text-lg">Rechtsanwalt</p>
+                <p className="text-muted-foreground text-base">Fachanwalt für Insolvenzrecht</p>
               </div>
               
-              {/* Contact Information - Single Column with Better Structure */}
-              <div className="max-w-2xl mx-auto space-y-6">
-                <div className="flex items-start gap-6 p-4 rounded-lg bg-accent/5">
-                  <MapPin className="h-7 w-7 text-accent mt-1 flex-shrink-0" />
-                  <div className="flex-1">
-                    <p className="font-bold text-foreground text-xl mb-2">Anschrift</p>
-                    <div className="text-lg text-muted-foreground leading-relaxed">
-                      <p>Speldorfer Str. 2</p>
-                      <p>40239 Düsseldorf</p>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4">
+                    <MapPin className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
+                    <div>
+                      <p className="font-semibold text-foreground text-lg">Adresse</p>
+                      <p className="text-muted-foreground">Speldorfer Str. 2</p>
+                      <p className="text-muted-foreground">40239 Düsseldorf</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-4">
+                    <Phone className="h-6 w-6 text-accent flex-shrink-0" />
+                    <div>
+                      <p className="font-semibold text-foreground text-lg">Telefon</p>
+                      <a href="tel:+492115426220" className="gold-accent hover:underline text-lg">
+                        (0211) 54262200
+                      </a>
                     </div>
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-6 p-4 rounded-lg bg-accent/5">
-                  <Phone className="h-7 w-7 text-accent flex-shrink-0" />
-                  <div className="flex-1">
-                    <p className="font-bold text-foreground text-xl mb-2">Telefon</p>
-                    <a href="tel:+492115426220" className="grey-accent hover:underline text-xl font-medium">
-                      (0211) 54262200
-                    </a>
+                <div className="space-y-6">
+                  <div className="flex items-center gap-4">
+                    <Mail className="h-6 w-6 text-accent flex-shrink-0" />
+                    <div>
+                      <p className="font-semibold text-foreground text-lg">E-Mail</p>
+                      <a href="mailto:m.steh@kbs-kanzlei.de" className="gold-accent hover:underline">
+                        m.steh@kbs-kanzlei.de
+                      </a>
+                    </div>
                   </div>
-                </div>
-                
-                <div className="flex items-center gap-6 p-4 rounded-lg bg-accent/5">
-                  <Mail className="h-7 w-7 text-accent flex-shrink-0" />
-                  <div className="flex-1">
-                    <p className="font-bold text-foreground text-xl mb-2">E-Mail</p>
-                    <a href="mailto:m.steh@kbs-kanzlei.de" className="grey-accent hover:underline text-lg font-medium break-all">
-                      m.steh@kbs-kanzlei.de
-                    </a>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-6 p-4 rounded-lg bg-accent/5">
-                  <Globe className="h-7 w-7 text-accent flex-shrink-0" />
-                  <div className="flex-1">
-                    <p className="font-bold text-foreground text-xl mb-2">Website</p>
-                    <a href="https://kbs-kanzlei.de" target="_blank" rel="noopener noreferrer" className="grey-accent hover:underline text-lg font-medium">
-                      kbs-kanzlei.de
-                    </a>
+                  
+                  <div className="flex items-center gap-4">
+                    <Globe className="h-6 w-6 text-accent flex-shrink-0" />
+                    <div>
+                      <p className="font-semibold text-foreground text-lg">Website</p>
+                      <a href="https://kbs-kanzlei.de" target="_blank" rel="noopener noreferrer" className="gold-accent hover:underline">
+                        kbs-kanzlei.de
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              {/* Action Buttons - All Three */}
-              <div className="text-center pt-8">
-                <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-3xl mx-auto">
-                  <Button asChild className="professional-button text-lg px-8 py-4 h-auto">
+              <div className="text-center pt-6">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button asChild className="professional-button text-lg px-8 py-3">
                     <a href="tel:+492115426220">
-                      <Phone className="h-5 w-5 mr-3" />
+                      <Phone className="h-5 w-5 mr-2" />
                       Anrufen
                     </a>
                   </Button>
-                  <Button variant="outline" asChild className="border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground text-lg px-8 py-4 h-auto">
+                  <Button variant="outline" asChild className="border-accent text-accent hover:bg-accent hover:text-accent-foreground text-lg px-8 py-3">
                     <a href="mailto:m.steh@kbs-kanzlei.de">
-                      <Mail className="h-5 w-5 mr-3" />
+                      <Mail className="h-5 w-5 mr-2" />
                       E-Mail senden
-                    </a>
-                  </Button>
-                  <Button variant="secondary" asChild className="text-lg px-8 py-4 h-auto bg-accent text-accent-foreground hover:bg-accent/80">
-                    <a href="https://kbs-kanzlei.de" target="_blank" rel="noopener noreferrer">
-                      <Globe className="h-5 w-5 mr-3" />
-                      Zur Kanzlei Website
                     </a>
                   </Button>
                 </div>

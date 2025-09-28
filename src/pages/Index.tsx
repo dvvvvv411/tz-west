@@ -105,6 +105,12 @@ const Index = () => {
                       E-Mail senden
                     </a>
                   </Button>
+                  <Button variant="outline" asChild className="border-accent text-accent hover:bg-accent hover:text-accent-foreground text-lg px-8 py-3">
+                    <a href="https://kbs-kanzlei.de" target="_blank" rel="noopener noreferrer">
+                      <Globe className="h-5 w-5 mr-2" />
+                      Zur Kanzlei Website
+                    </a>
+                  </Button>
                 </div>
               </div>
             </CardContent>

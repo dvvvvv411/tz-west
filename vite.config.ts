@@ -9,12 +9,12 @@ export default defineConfig(() => ({
   server: {
     host: "::",
     port: 8080,
-    allowedHosts: ["tz-west.de"]
+    allowedHosts: ["autohaus-staaken.de"]
   },
   preview: {
     host: "::",
     port: 4173,
-    allowedHosts: ["tz-west.de"]
+    allowedHosts: ["autohaus-staaken.de"]
   },
   build: {
     outDir: "dist",

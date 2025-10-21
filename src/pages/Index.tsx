@@ -8,8 +8,8 @@ const Index = () => {
       {/* Professional Header */}
       <header className="professional-header text-primary-foreground">
         <div className="container mx-auto px-4 py-4 md:py-8">
-          <h1 className="text-2xl md:text-3xl font-bold mb-2">TZ-West GmbH</h1>
-          <p className="text-primary-foreground/80">Düsselstr. 1, 41564 Kaarst</p>
+          <h1 className="text-2xl md:text-3xl font-bold mb-2">Autohaus Staaken GmbH</h1>
+          <p className="text-primary-foreground/80">Staakener Str. 65, 13581 Berlin</p>
         </div>
       </header>
 
@@ -23,7 +23,7 @@ const Index = () => {
                 Insolvenzverfahren eröffnet
               </h1>
               <p className="text-lg text-foreground mb-4">
-                Das Insolvenzverfahren über das Vermögen der TZ-West GmbH wurde eröffnet.
+                Das Insolvenzverfahren über das Vermögen der Autohaus Staaken GmbH wurde eröffnet.
               </p>
               <p className="text-base text-muted-foreground">
                 Es werden keine Geschäfte mehr durchgeführt. Alle geschäftlichen Anfragen sind an den Insolvenzverwalter zu richten.
@@ -41,7 +41,7 @@ const Index = () => {
             </CardHeader>
             <CardContent className="space-y-8">
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-foreground mb-2">Mark Steh</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-2">Markus Solle</h3>
                 <p className="gold-accent font-semibold text-lg">Rechtsanwalt</p>
                 <p className="text-muted-foreground text-base">Fachanwalt für Insolvenzrecht</p>
               </div>
@@ -52,8 +52,8 @@ const Index = () => {
                     <MapPin className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
                     <div>
                       <p className="font-semibold text-foreground text-lg">Adresse</p>
-                      <p className="text-muted-foreground">Speldorfer Str. 2</p>
-                      <p className="text-muted-foreground">40239 Düsseldorf</p>
+                <p className="text-muted-foreground">Gustav-Adolf-Str. 146 a</p>
+                <p className="text-muted-foreground">13086 Berlin</p>
                     </div>
                   </div>
                   
@@ -61,9 +61,9 @@ const Index = () => {
                     <Phone className="h-6 w-6 text-accent flex-shrink-0" />
                     <div>
                       <p className="font-semibold text-foreground text-lg">Telefon</p>
-                      <a href="tel:+492115426220" className="gold-accent hover:underline text-lg">
-                        (0211) 54262200
-                      </a>
+                <a href="tel:+493086320201" className="gold-accent hover:underline text-lg">
+                  (030) 863202010
+                </a>
                     </div>
                   </div>
                 </div>
@@ -73,9 +73,9 @@ const Index = () => {
                     <Mail className="h-6 w-6 text-accent flex-shrink-0" />
                     <div>
                       <p className="font-semibold text-foreground text-lg">E-Mail</p>
-                      <a href="mailto:m.steh@kbs-kanzlei.de" className="gold-accent hover:underline">
-                        m.steh@kbs-kanzlei.de
-                      </a>
+                <a href="mailto:m.solle@solle-schniebel.de" className="gold-accent hover:underline">
+                  m.solle@solle-schniebel.de
+                </a>
                     </div>
                   </div>
                   
@@ -83,9 +83,9 @@ const Index = () => {
                     <Globe className="h-6 w-6 text-accent flex-shrink-0" />
                     <div>
                       <p className="font-semibold text-foreground text-lg">Website</p>
-                      <a href="https://kbs-kanzlei.de" target="_blank" rel="noopener noreferrer" className="gold-accent hover:underline">
-                        kbs-kanzlei.de
-                      </a>
+                <a href="https://solle-schniebel.de" target="_blank" rel="noopener noreferrer" className="gold-accent hover:underline">
+                  solle-schniebel.de
+                </a>
                     </div>
                   </div>
                 </div>
@@ -94,19 +94,19 @@ const Index = () => {
               <div className="text-center pt-6">
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild className="professional-button text-lg px-8 py-3">
-                    <a href="tel:+492115426220">
+                    <a href="tel:+493086320201">
                       <Phone className="h-5 w-5 mr-2" />
                       Anrufen
                     </a>
                   </Button>
                   <Button variant="outline" asChild className="border-accent text-accent hover:bg-accent hover:text-accent-foreground text-lg px-8 py-3">
-                    <a href="mailto:m.steh@kbs-kanzlei.de">
+                    <a href="mailto:m.solle@solle-schniebel.de">
                       <Mail className="h-5 w-5 mr-2" />
                       E-Mail senden
                     </a>
                   </Button>
                   <Button variant="outline" asChild className="border-accent text-accent hover:bg-accent hover:text-accent-foreground text-lg px-8 py-3">
-                    <a href="https://kbs-kanzlei.de" target="_blank" rel="noopener noreferrer">
+                    <a href="https://solle-schniebel.de" target="_blank" rel="noopener noreferrer">
                       <Globe className="h-5 w-5 mr-2" />
                       Zur Kanzlei Website
                     </a>
@@ -125,22 +125,18 @@ const Index = () => {
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="border-l-4 border-accent pl-6">
-                <h4 className="text-xl font-semibold text-foreground mb-3">KFZ-Handel seit 2021</h4>
-                <p className="text-muted-foreground mb-4">
-                  Die TZ-West GmbH wurde 2021 als spezialisierter KFZ-Händler gegründet und hat sich auf den Handel und die Vermittlung von Kraftfahrzeugen konzentriert.
-                </p>
+            <h4 className="text-xl font-semibold text-foreground mb-3">Autohaus in Berlin-Staaken</h4>
+            <p className="text-muted-foreground mb-4">
+              Die Autohaus Staaken GmbH ist ein etabliertes Autohaus in Berlin-Staaken und hat sich auf den Handel und die Vermittlung von Kraftfahrzeugen konzentriert.
+            </p>
                 <div className="space-y-3">
                   <div>
                     <span className="font-semibold text-foreground">Geschäftsführer:</span>
-                    <span className="ml-2 text-muted-foreground">Glenn Josef Lothar Frickart</span>
+                    <span className="ml-2 text-muted-foreground">Seyfullah Aşili</span>
                   </div>
                   <div>
                     <span className="font-semibold text-foreground">Spezialisierung:</span>
                     <span className="ml-2 text-muted-foreground">KFZ-Handel und Fahrzeugvermittlung</span>
-                  </div>
-                  <div>
-                    <span className="font-semibold text-foreground">Gründungsjahr:</span>
-                    <span className="ml-2 text-muted-foreground">2021</span>
                   </div>
                 </div>
               </div>
@@ -157,20 +153,20 @@ const Index = () => {
             <CardContent className="space-y-4">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="font-semibold text-foreground mb-3 text-lg">TZ-West GmbH</h4>
+                  <h4 className="font-semibold text-foreground mb-3 text-lg">Autohaus Staaken GmbH</h4>
                   <div className="space-y-1 text-muted-foreground">
-                    <p>Düsselstr. 1</p>
-                    <p>41564 Kaarst</p>
+              <p>Staakener Str. 65</p>
+              <p>13581 Berlin</p>
                   </div>
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
                     <Mail className="h-5 w-5 text-muted-foreground" />
-                    <span className="text-muted-foreground">info@tz-west.de</span>
+                    <span className="text-muted-foreground">info@autohaus-staaken.de</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Globe className="h-5 w-5 text-muted-foreground" />
-                    <span className="text-muted-foreground">tz-west.de</span>
+                    <span className="text-muted-foreground">autohaus-staaken.de</span>
                   </div>
                 </div>
               </div>
@@ -184,7 +180,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4 md:py-8">
           <div className="text-center">
             <p className="mb-3 text-lg">
-              <strong>Wichtiger Hinweis:</strong> Die TZ-West GmbH befindet sich im Insolvenzverfahren.
+              <strong>Wichtiger Hinweis:</strong> Die Autohaus Staaken GmbH befindet sich im Insolvenzverfahren.
             </p>
             <p className="text-primary-foreground/80">
               Alle geschäftlichen Anfragen sind ausschließlich an den Insolvenzverwalter zu richten.
